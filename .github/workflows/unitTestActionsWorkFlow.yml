@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 8
-      - name: Make gardlew executable
-      - run: chmod +x ./gradelew
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       - name: run unit tests
-      - run: ./gradelew test
+        run: ./gradlew test
